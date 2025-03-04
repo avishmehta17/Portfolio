@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -70,44 +71,77 @@
 </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="images/project1.jpg" alt="Project 1">
-        <h3> MealBridge </h3>
-        <p>Connecting surplus food to those in need.</p>
-        <a href="#" class="btn">View Project</a>
-      </div>
-      <div class="project-card">
-        <img src="images/project2.jpg" alt="Project 2">
-        <h3>My Portfolio</h3>
-        <p>"Creative. Developer. Thinker."</p>
-        <a href="#" class="btn">View Project</a>
-      </div>
-      <div class="project-card">
-        <img src="images/project3.jpg" alt="Project 3">
-        <h3>StockInsight</h3>
-        <p>Get insights into the stock market.</p>
-        <a href="#" class="btn">View Project</a>
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-list">
+    <!-- Project 1 -->
+    <div class="project-item">
+      <img src="images/project1-logo.png" alt="Project 1 Logo" class="project-logo">
+      <div class="project-details">
+        <h3>Project 1: Responsive Website</h3>
+        <p>This project involved creating a fully responsive website using HTML, CSS, and JavaScript.</p>
       </div>
     </div>
-  </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certification-grid">
-      <div class="certification-card">
-        <img src="images/cert1.jpg" alt="Certification 1">
-        <h3>Certification 1</h3>
-      </div>
-      <div class="certification-card">
-        <img src="images/cert2.jpg" alt="Certification 2">
-        <h3>Certification 2</h3>
+    <!-- Project 2 -->
+    <div class="project-item">
+      <img src="images/project2-logo.png" alt="Project 2 Logo" class="project-logo">
+      <div class="project-details">
+        <h3>Project 2: E-commerce Platform</h3>
+        <p>Developed an e-commerce platform with user authentication and payment integration.</p>
       </div>
     </div>
-  </section>
+
+    <!-- Project 3 -->
+    <div class="project-item">
+      <img src="images/project3-logo.png" alt="Project 3 Logo" class="project-logo">
+      <div class="project-details">
+        <h3>Project 3: To-Do App</h3>
+        <p>A simple to-do app built with React.js to manage daily tasks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Certifications Section -->
+ <!-- Certifications Section -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="certification-grid">
+    <!-- Certificate 1 -->
+    <div class="certification-card">
+      <img src="images/cert1.jpg" alt="Certification 1" class="certification-image">
+      <div class="certification-details">
+        <h3>Certification 1</h3>
+        <p>Issued by: [Issuer Name]</p>
+        <p>Date: [Completion Date]</p>
+      </div>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="certification-card">
+      <img src="images/cert2.jpg" alt="Certification 2" class="certification-image">
+      <div class="certification-details">
+        <h3>Certification 2</h3>
+        <p>Issued by: [Issuer Name]</p>
+        <p>Date: [Completion Date]</p>
+      </div>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="certification-card">
+      <img src="images/cert3.jpg" alt="Certification 3" class="certification-image">
+      <div class="certification-details">
+        <h3>Certification 3</h3>
+        <p>Issued by: [Issuer Name]</p>
+        <p>Date: [Completion Date]</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -128,6 +162,6 @@
   <!-- Back to Top Button -->
   <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
-  <script src="script.js"></script>
+  
 </body>
 </html>
