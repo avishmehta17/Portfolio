@@ -1,0 +1,386 @@
+/* General Styles */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #0a192f;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #0a192f;
+    color: #ffffff;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+  }
+  
+  nav ul li {
+    margin: 0.5rem 1rem; /* Smaller margin for mobile */
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #64ffda;
+  }
+
+/* Home Section */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Smaller height for all devices */
+    background: linear-gradient(135deg, #0a192f, #112240);
+    text-align: center;
+  }
+  
+  .home-content {
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+  
+  #home img {
+    border-radius: 50%; /* Keep the circular shape */
+    width: 180px; /* Increase width */
+    height: 180px; /* Increase height */
+    margin-bottom: 1rem; /* Space below the image */
+    border: 3px solid #64ffda; /* Teal border */
+  }
+  
+  
+  #home h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #home .summary {
+    font-size: 1rem;
+    color: #ccd6f6;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  /* Media Queries for Intro Section */
+  @media (max-width: 768px) {
+    #home {
+      height: 60vh; /* Smaller height for tablets and mobiles */
+    }
+  
+    #home img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    #home h1 {
+      font-size: 1.75rem;
+    }
+  
+    #home .summary {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Education Section */
+  <style>
+    #education {
+        padding: 4rem 2rem;
+        background: #112240; /* Dark navy blue */
+    }
+  
+  #education h2 {
+    font-size: 1.75rem; /* Smaller heading */
+    text-align: left;
+    margin-bottom: 1rem; /* Increased margin to push content down */
+    color: #e8fffa; /* Teal highlight color */
+    position: relative; /* Optional: For fine-tuning with top/bottom */
+    top: 10px; /* Optional: Move the heading down by 10px */
+  }
+    
+    .education-heading-container {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .education-heading {
+        text-align: left;
+        font-size: 2rem;
+        color: #ffffff;
+        margin-left: 1.5rem; /* Moves heading slightly away from the border */
+    }
+    
+    .education-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .education-box {
+        flex: 1;
+        background: #233554; /* Darker navy blue */
+        padding: 1.5rem;
+        border-radius: 10px;
+        max-width: 411px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .education-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    }
+</style>
+
+
+    
+</style>
+  
+ /* Projects Section */
+/* Projects Section */
+#projects {
+    padding: 2rem 1rem;
+    background: #0a192f;
+  }
+  
+  #projects h2 {
+    font-size: 1.75rem;
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #e2fff8;
+
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .project-card {
+    background: #112240;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .project-card p {
+    font-size: 0.9rem;
+    color: #ccd6f6;
+  }
+  
+  .project-card .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #64ffda;
+    color: #0a192f;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .project-card .btn:hover {
+    background: #52d1b2;
+  }
+  
+  /* Media Queries for Projects Section */
+  @media (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+  
+    .project-card {
+      padding: 1rem;
+    }
+  }
+  
+  /* Certifications Section */
+
+#certifications {
+    padding: 2rem 1rem;
+    background: #112240;
+    margin-top: 2rem;
+  }
+  
+  #certifications h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #64ffda;
+  }
+  
+  .certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .certification-card {
+    background: #233554;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .certification-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .certification-card h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  
+  /* Media Queries for Certificates Section */
+  @media (max-width: 768px) {
+    .certification-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+  
+    .certification-card {
+      padding: 0.75rem;
+    }
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 4rem 2rem;
+    background: #0a192f; /* Midnight blue */
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #contact-form input, #contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #233554; /* Darker navy blue */
+    border-radius: 5px;
+    background: #112240; /* Dark navy blue */
+    color: #ffffff;
+  }
+  
+  #contact-form input::placeholder, #contact-form textarea::placeholder {
+    color: #8892b0; /* Light blue-gray placeholder */
+  }
+  
+  #contact-form button {
+    background: #64ffda; /* Teal highlight color */
+    color: #0a192f; /* Dark text for contrast */
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #contact-form button:hover {
+    background: #52d1b2; /* Darker teal on hover */
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-links a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #64ffda; /* Teal highlight color on hover */
+  }
+  
+  /* Back to Top Button */
+  #back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #64ffda; /* Teal highlight color */
+    color: #0a192f; /* Dark text for contrast */
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #back-to-top:hover {
+    background: #52d1b2; /* Darker teal on hover */
+  }
