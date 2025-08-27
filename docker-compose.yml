@@ -5,6 +5,6 @@ services:
     image: nginx:alpine
     container_name: my-website
     ports:
-      - "8080:80"
+      - "9090:80"
     volumes:
       - ./site:/usr/share/nginx/html:ro
