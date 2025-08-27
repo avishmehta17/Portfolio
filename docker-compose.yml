@@ -10,3 +10,4 @@ services:
       - ./:/usr/share/nginx/html:ro
 
 # Finally we did it!
+#FIRST PROJECT DONE!
